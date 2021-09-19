@@ -24,7 +24,7 @@ export default defineStore('main', {
   }),
   getters: {
     combinationHistorySorted(): CombinationHistoryItem[] {
-      return orderBy(this.combinationsHistory, 'date', 'desc');
+      return orderBy(this.combinationsHistory, (d) => new Date(d.date), 'desc');
     },
   },
   actions: {
