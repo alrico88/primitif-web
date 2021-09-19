@@ -1,0 +1,49 @@
+{
+  "name": "primitif-web",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alrico88/primitif-web"
+  },
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-sans": "^4.5.1",
+    "bootstrap": "^5.1.1",
+    "dayjs": "^1.10.7",
+    "file-saver": "^2.0.5",
+    "lodash": "^4.17.21",
+    "papaparse": "^5.3.1",
+    "pinia": "^2.0.0-rc.9",
+    "primitif": "^1.0.0",
+    "uuid": "^8.3.2",
+    "vue": "^3.2.6",
+    "vue-i18n": "^9.1.7"
+  },
+  "devDependencies": {
+    "@iconify/json": "^1.1.403",
+    "@types/file-saver": "^2.0.3",
+    "@types/lodash": "^4.14.173",
+    "@types/papaparse": "^5.2.6",
+    "@types/uuid": "^8.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "@vitejs/plugin-vue": "^1.6.1",
+    "@vue/compiler-sfc": "^3.2.12",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-vue": "^7.18.0",
+    "pug": "^3.0.2",
+    "sass": "^1.41.1",
+    "typescript": "^4.3.2",
+    "unplugin-icons": "^0.11.3",
+    "vite": "^2.5.4",
+    "vite-plugin-pwa": "^0.11.2",
+    "vue-tsc": "^0.2.2",
+    "workbox-window": "^6.3.0"
+  }
+}

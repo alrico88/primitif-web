@@ -1,0 +1,81 @@
+$body-bg: #effaf8;
+$primary: #60dea9;
+$body-color: #000000;
+$font-family-sans-serif: 'IBM Plex Sans';
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.form-group {
+  margin-bottom: 1rem;
+
+  label {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.text-primary {
+  color: #439c77 !important;
+}
+
+.numberCircle  {
+  letter-spacing: 2px;
+  padding: 0 0 0 2px;
+  border: 1px solid rgba(0,0,0,.16);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: 300;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,efeff2+100 */
+  background: #ffffff; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #efeff2 100%);
+  background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#efeff2 100%);
+  background: radial-gradient(ellipse at center,  #ffffff 0%,#efeff2 100%);
+
+  
+
+  @include media-breakpoint-up(sm) {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    line-height: 57px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 37px;
+  }
+
+  &.sm {
+    @include media-breakpoint-up(sm) {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      line-height: 37px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 30px;
+      height: 30px;
+      font-size: 10px;
+      line-height: 27px;
+    }
+  }
+}
+
+.table-stackable {
+  @include media-breakpoint-down(sm) {
+    td {
+      display: block;
+      padding: 10px 14px 10px 14px;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}
